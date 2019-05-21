@@ -113,6 +113,7 @@
             this.Controls.Add(this.btnFind);
             this.Name = "frmTimKiem";
             this.Text = "frmTimKiem";
+            this.Load += new System.EventHandler(this.frmTimKiem_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

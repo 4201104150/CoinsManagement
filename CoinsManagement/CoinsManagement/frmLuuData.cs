@@ -23,5 +23,10 @@ namespace CoinsManagement
         {
 
         }
+
+        private void frmLuuData_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

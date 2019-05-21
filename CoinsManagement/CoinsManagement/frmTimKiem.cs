@@ -16,5 +16,10 @@ namespace CoinsManagement
         {
             InitializeComponent();
         }
+
+        private void frmTimKiem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

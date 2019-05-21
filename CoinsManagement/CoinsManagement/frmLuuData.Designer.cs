@@ -70,6 +70,7 @@
             this.Controls.Add(this.label);
             this.Name = "frmLuuData";
             this.Text = "frmLuuData";
+            this.Load += new System.EventHandler(this.frmLuuData_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

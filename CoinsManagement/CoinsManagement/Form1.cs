@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net;
+using System.Net;       
 using System.Web;
 using Oracle.ManagedDataAccess.Client;
 using Oracle.ManagedDataAccess.Types;
@@ -23,6 +23,7 @@ namespace CoinsManagement
         public Form1()
         {
             this.setConnection();
+            //this.setConnection();
             InitializeComponent();
         }
         private void setConnection()
@@ -42,23 +43,36 @@ namespace CoinsManagement
 
         /// <summary>
         /// updata
-        /// </summary>
+        /// </summary>-
         private void updateDatagridview()
         {
+         
             OracleCommand cmd = con.CreateCommand();
-            cmd.CommandText = "SELECT IDD,NAMES FROM COINUSD WHERE IDD='1'";
+            OracleCommand cmd2 = con.CreateCommand();
+            cmd.CommandText = "SELECT IDD FROM COIN ";
+            cmd2.CommandText = "DELETE FROM COIN WHERE IDD='99' ";
             cmd.CommandType = CommandType.Text;
-
+            cmd2.CommandType = CommandType.Text;
+            cmd2.ExecuteNonQuery();
             OracleDataReader dataReader = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             using (OracleDataAdapter dataAdapter = new OracleDataAdapter())
             {
                 dataAdapter.SelectCommand = cmd;
                 dataAdapter.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            if(dt!=null)
+            {
+                MessageBox.Show("!null");
+            }
+            else
+            {
+                MessageBox.Show("null");
             }
             //dt.Dispose();
-            Console.Write(dt);
-            dataGridView1.DataSource = dt ;
+            //Console.Write(dt);
+            
         }
         private static string API_KEY = "0c1437b5-12b4-4f1d-90e1-83a8eefc892f";
         /// <summary>
