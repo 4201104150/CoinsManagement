@@ -31,84 +31,66 @@
             this.btnFind = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cbbLoaiCoin = new System.Windows.Forms.ComboBox();
-            this.dateTimePickerBefore = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerAfter = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtLoaiCoin = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnFind
             // 
-            this.btnFind.Location = new System.Drawing.Point(256, 97);
+            this.btnFind.Location = new System.Drawing.Point(150, 41);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(75, 23);
             this.btnFind.TabIndex = 0;
             this.btnFind.Text = "Tìm";
             this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(253, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Loại coin";
+            this.label1.Text = "Loại tiền";
             // 
             // cbbLoaiCoin
             // 
             this.cbbLoaiCoin.FormattingEnabled = true;
-            this.cbbLoaiCoin.Location = new System.Drawing.Point(256, 40);
+            this.cbbLoaiCoin.Items.AddRange(new object[] {
+            "USD",
+            "JPY",
+            "VND",
+            "EUR"});
+            this.cbbLoaiCoin.Location = new System.Drawing.Point(244, 43);
             this.cbbLoaiCoin.Name = "cbbLoaiCoin";
             this.cbbLoaiCoin.Size = new System.Drawing.Size(121, 21);
             this.cbbLoaiCoin.TabIndex = 2;
             // 
-            // dateTimePickerBefore
-            // 
-            this.dateTimePickerBefore.CustomFormat = "\'Ngày\' dd \'Tháng\' MM \'Năm\' yyyy";
-            this.dateTimePickerBefore.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerBefore.Location = new System.Drawing.Point(12, 41);
-            this.dateTimePickerBefore.Name = "dateTimePickerBefore";
-            this.dateTimePickerBefore.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerBefore.TabIndex = 3;
-            // 
-            // dateTimePickerAfter
-            // 
-            this.dateTimePickerAfter.CustomFormat = "\'Ngày\' dd \'Tháng\' MM \'Năm\' yyyy";
-            this.dateTimePickerAfter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerAfter.Location = new System.Drawing.Point(12, 100);
-            this.dateTimePickerAfter.Name = "dateTimePickerAfter";
-            this.dateTimePickerAfter.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerAfter.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Từ ngày";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 84);
+            this.label3.Location = new System.Drawing.Point(27, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Đến ngày";
+            this.label3.Text = "Loại Coin";
+            // 
+            // txtLoaiCoin
+            // 
+            this.txtLoaiCoin.Location = new System.Drawing.Point(30, 43);
+            this.txtLoaiCoin.Name = "txtLoaiCoin";
+            this.txtLoaiCoin.Size = new System.Drawing.Size(100, 20);
+            this.txtLoaiCoin.TabIndex = 3;
             // 
             // frmTimKiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 137);
-            this.Controls.Add(this.dateTimePickerAfter);
-            this.Controls.Add(this.dateTimePickerBefore);
+            this.ClientSize = new System.Drawing.Size(400, 91);
+            this.Controls.Add(this.txtLoaiCoin);
             this.Controls.Add(this.cbbLoaiCoin);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFind);
             this.Name = "frmTimKiem";
@@ -124,9 +106,7 @@
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbbLoaiCoin;
-        private System.Windows.Forms.DateTimePicker dateTimePickerBefore;
-        private System.Windows.Forms.DateTimePicker dateTimePickerAfter;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtLoaiCoin;
     }
 }

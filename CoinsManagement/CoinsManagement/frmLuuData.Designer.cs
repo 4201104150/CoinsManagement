@@ -36,6 +36,11 @@
             // cbbLoaiCoin
             // 
             this.cbbLoaiCoin.FormattingEnabled = true;
+            this.cbbLoaiCoin.Items.AddRange(new object[] {
+            "USD",
+            "JPY",
+            "VND",
+            "EUR"});
             this.cbbLoaiCoin.Location = new System.Drawing.Point(69, 26);
             this.cbbLoaiCoin.Name = "cbbLoaiCoin";
             this.cbbLoaiCoin.Size = new System.Drawing.Size(121, 21);
@@ -46,9 +51,9 @@
             this.label.AutoSize = true;
             this.label.Location = new System.Drawing.Point(1, 29);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(50, 13);
+            this.label.Size = new System.Drawing.Size(51, 13);
             this.label.TabIndex = 1;
-            this.label.Text = "Loại coin";
+            this.label.Text = "Loại Tiền";
             // 
             // btnLuuData
             // 
