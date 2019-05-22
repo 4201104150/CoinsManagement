@@ -152,7 +152,7 @@ namespace CoinsManagement
         /// <param name="e"></param>
         private void btnLoc_Click(object sender, EventArgs e)
         {
-            updateDatagridview("USD");
+            updateDatagridview(lbTien.Text);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -223,6 +223,12 @@ namespace CoinsManagement
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void qLNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQLNV f = new frmQLNV();
+            f.Show();
         }
     }
 }

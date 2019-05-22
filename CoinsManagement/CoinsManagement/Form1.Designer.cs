@@ -48,6 +48,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnfirstrun = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.qLNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -108,7 +109,8 @@
             // 
             this.chứcNăngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tìmKiếmToolStripMenuItem,
-            this.lưuToolStripMenuItem});
+            this.lưuToolStripMenuItem,
+            this.qLNhânViênToolStripMenuItem});
             this.chứcNăngToolStripMenuItem.Name = "chứcNăngToolStripMenuItem";
             this.chứcNăngToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.chứcNăngToolStripMenuItem.Text = "Chức năng";
@@ -116,14 +118,14 @@
             // tìmKiếmToolStripMenuItem
             // 
             this.tìmKiếmToolStripMenuItem.Name = "tìmKiếmToolStripMenuItem";
-            this.tìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.tìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tìmKiếmToolStripMenuItem.Text = "Tìm kiếm";
             this.tìmKiếmToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmToolStripMenuItem_Click);
             // 
             // lưuToolStripMenuItem
             // 
             this.lưuToolStripMenuItem.Name = "lưuToolStripMenuItem";
-            this.lưuToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.lưuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lưuToolStripMenuItem.Text = "Lưu";
             this.lưuToolStripMenuItem.Click += new System.EventHandler(this.lưuToolStripMenuItem_Click);
             // 
@@ -211,6 +213,13 @@
             this.timer1.Interval = 86400000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // qLNhânViênToolStripMenuItem
+            // 
+            this.qLNhânViênToolStripMenuItem.Name = "qLNhânViênToolStripMenuItem";
+            this.qLNhânViênToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.qLNhânViênToolStripMenuItem.Text = "QL Nhân viên";
+            this.qLNhânViênToolStripMenuItem.Click += new System.EventHandler(this.qLNhânViênToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,6 +267,7 @@
         private System.Windows.Forms.ToolStripMenuItem eURToolStripMenuItem;
         private System.Windows.Forms.Button btnfirstrun;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem qLNhânViênToolStripMenuItem;
     }
 }
 
