@@ -5,7 +5,9 @@ cập nhật các chức năng form1
 chưa cập nhật chức năng login
 
 
-bảng nhân viên, chưa cập nhật table các loại coin
+bảng nhân viên,
+
+
 create table nhanvien
 (
   idd int primary key,
@@ -31,3 +33,59 @@ begin
 end;
 
 exec insNhanVien;
+
+table coin
+
+
+create table CoinUSD
+(
+  IDD number primary key,
+  Names varchar2(100),
+  Symbol varchar2(100),
+  Slug varchar2(100),
+  ranks varchar2(100),
+  price varchar2(100),
+  Change1h varchar2(100),
+  Change24h varchar2(100),
+  Change1d varchar2(100),
+  Updates varchar2(100)
+);
+create table CoinEUR
+(
+  IDD number primary key,
+  Names varchar2(100),
+  Symbol varchar2(100),
+  Slug varchar2(100),
+  ranks varchar2(100),
+  price varchar2(100),
+  Change1h varchar2(100),
+  Change24h varchar2(100),
+  Change1d varchar2(100),
+  Updates varchar2(100)
+);
+create table CoinJPY
+(
+  IDD number primary key,
+  Names varchar2(100),
+  Symbol varchar2(100),
+  Slug varchar2(100),
+  ranks varchar2(100),
+  price varchar2(100),
+  Change1h varchar2(100),
+  Change24h varchar2(100),
+  Change1d varchar2(100),
+  Updates varchar2(100)
+);
+create table CoinVND
+(
+  IDD number primary key,
+  Names varchar2(100),
+  Symbol varchar2(100),
+  Slug varchar2(100),
+  ranks varchar2(100),
+  price varchar2(100),
+  Change1h varchar2(100),
+  Change24h varchar2(100),
+  Change1d varchar2(100),
+  Updates varchar2(100)
+);
